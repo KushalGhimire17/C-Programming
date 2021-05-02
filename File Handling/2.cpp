@@ -1,4 +1,4 @@
-/* WAP to CREATE a file named test.txt and DISPLAY content of this file  */
+/* WAP to READ a file named test.txt and DISPLAY content of this file  */
 
 #include<stdio.h>
 #include<stdlib.h>
