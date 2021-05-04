@@ -7,7 +7,6 @@
    
    int main()
    {
-   	
    	// defining a structure
    	struct date {
    		int day;
@@ -20,6 +19,7 @@
    		struct date dob;
    		float salary;
 	   } emp ;
+// struct employee emp;
 
 	   // input logic
 	   printf("\nEnter name: \t");
@@ -34,6 +34,7 @@
 	   scanf("%d",&emp.dob.year);
 	   printf("\nEnter salary: \t");
 	   scanf("%f",&emp.salary);
+	   
 	   
 	   //output logic
 	   printf("\nThe employee's information is\n");

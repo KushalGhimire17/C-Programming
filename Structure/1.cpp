@@ -19,6 +19,7 @@ int main() {
 
 	// input logic
 	printf("\nEnter name: \t");
+//	scanf("%s", s.name);
 	gets(s.name);						// structure variable 's' is accessing it's member 'name'using unformatted input i.e. gets()
 	printf("\nEnter roll number: \t");
 	scanf("%d", &s.roll);
@@ -26,12 +27,14 @@ int main() {
 	scanf("%f",&s.marks);
 	printf("\nEnter remarks P/F: \t");
 	s.remark = getch();
+//	scanf("%c", s.remark);
+
 
 	//output logic
 	printf("\nThe student's information is\n");
 	printf("\nSTUDENT NAME \t\tROLL NO \t\t\tMARKS \t\t\tREMARKS");
 	printf("\n-------------------------------------------------------------------------------------------------------------------\n");
-	printf("%s\t\t\t%d\t\t\t\t%.2f\t\t\t%c",s.name,s.roll,s.marks,s.remark);
+	printf("%s\t\t\t%d\t\t\t\t%.2f\t\t\t%d",s.name,s.roll,s.marks,s.remark);
 	getch();
 	return 0;
 }

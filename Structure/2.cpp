@@ -10,7 +10,7 @@
    	// defining a structure using typedef
    	typedef struct {
    		char name[20];
-   		int roll;x
+   		int roll;
    		float marks;
    		char remark;
 	   } student ;
@@ -20,18 +20,19 @@
 	   
 	   //local variables
 	   int i;
-	   float tempForMarks;
+//	   float tempForMarks;
 	   
 	   // input logic
 	   for(i=0;i<5;i++)
 	   {
-		   printf("\nEnter name: \t");
+		   printf("\nEnter name : \t");
 		   scanf("%s",s[i].name);
 		   printf("\nEnter roll number: \t");
 		   scanf("%d", &s[i].roll);
 		   printf("\nEnter marks: \t");
-		   scanf("%f",&tempForMarks);
-		   s[i].marks = tempForMarks;
+//		   scanf("%f",&tempForMarks);
+		   scanf("%f",&s[i].marks);
+//		   s[i].marks = tempForMarks;
 		   printf("\nEnter remarks P/F: \t");
 		   s[i].remark = getche();
 	   }
